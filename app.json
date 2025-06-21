@@ -7,16 +7,25 @@
     "icon": "./assets/images/icon.png",
     "scheme": "spotlightapp",
     "userInterfaceStyle": "automatic",
+
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        },
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.earthtovalentine.spotlightapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#000000"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.earthtovalentine.spotlightapp"
     },
     "web": {
       "bundler": "metro",
@@ -31,12 +40,19 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#000000"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5fb7e79a-d063-4635-bfbb-1df6c720cca0"
+      },
+      "router": {}
+    },
+    "owner": "earthtovalentine"
   }
 }
