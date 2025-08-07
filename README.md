@@ -1,4 +1,4 @@
-# Welcome to your Spotlight 👋
+# Welcome to Spotlight 👋
 
 ## Get started
 
